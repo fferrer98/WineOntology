@@ -1,0 +1,105 @@
+{
+  "@context" : {
+    "RiberaDelDuero" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDuero"
+    },
+    "ToroRed" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#ToroRed"
+    },
+    "hasPrice" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Winery" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Winery"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "hasName" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Mencia" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Mencia"
+    },
+    "producedBy" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedBy",
+      "@type" : "@id"
+    },
+    "Syrah" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Syrah"
+    },
+    "Rioja" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Rioja"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "authors" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#authors"
+    },
+    "PedroXimenez" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#PedroXimenez"
+    },
+    "RiojaRed" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiojaRed"
+    },
+    "hasRate" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasRate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "producedIn" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedIn",
+      "@type" : "@id"
+    },
+    "Monastrell" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Monastrell"
+    },
+    "Sherry" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Sherry"
+    },
+    "Grenache" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Grenache"
+    },
+    "RiojaWhite" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiojaWhite"
+    },
+    "Red" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Red"
+    },
+    "title" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#title"
+    },
+    "Tempranillo" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Tempranillo"
+    },
+    "Verdejo" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Verdejo"
+    },
+    "Priorat" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Priorat"
+    },
+    "RiberaDelDueroWhite" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDueroWhite"
+    },
+    "RiberaDelDueroRed" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDueroRed"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Cava" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Cava"
+    },
+    "Region" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Region"
+    },
+    "Wine" : {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+    }
+  }
+}

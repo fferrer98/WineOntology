@@ -1,0 +1,441 @@
+@prefix : <http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#> .
+
+<http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality> rdf:type owl:Ontology ;
+                                                                      <http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#authors> "Fede Soriano & Fran Ferrer" ;
+                                                                      <http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#title> "Spanish Wine Quality" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#authors
+<http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#authors> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#title
+<http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedBy
+:producedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Wine ;
+            rdfs:range :Winery .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedIn
+:producedIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Wine ;
+            rdfs:range :Region .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Region ,
+                     :Winery ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasPrice
+:hasPrice rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Wine ;
+          rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasRate
+:hasRate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Wine ;
+         rdfs:range xsd:decimal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Cava
+:Cava rdf:type owl:Class ;
+      rdfs:subClassOf :Wine ;
+      rdfs:comment "Vino del tipo Cava." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Grenache
+:Grenache rdf:type owl:Class ;
+          rdfs:subClassOf :Wine ;
+          rdfs:comment "Vino del tipo Grenache." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Mencia
+:Mencia rdf:type owl:Class ;
+        rdfs:subClassOf :Wine ;
+        rdfs:comment "Vino del tipo Mencia." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Monastrell
+:Monastrell rdf:type owl:Class ;
+            rdfs:subClassOf :Wine ;
+            rdfs:comment "Vino del tipo Monastrell." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#PedroXimenez
+:PedroXimenez rdf:type owl:Class ;
+              rdfs:subClassOf :Wine ;
+              rdfs:comment "Vino del tipo Pedro Ximenez" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Priorat
+:Priorat rdf:type owl:Class ;
+         rdfs:subClassOf :Wine ;
+         rdfs:comment "Vino del tipo Priorat." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Red
+:Red rdf:type owl:Class ;
+     rdfs:subClassOf :Wine ;
+     rdfs:comment "Vino del tipo tinto." ;
+     rdfs:sameAs "https://dbpedia.org/page/Red_wine" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Region
+:Region rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasName ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ;
+        rdfs:comment "Región de procedencia del vino o bodega en cuestión" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDuero
+:RiberaDelDuero rdf:type owl:Class ;
+                rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDueroRed
+:RiberaDelDueroRed rdf:type owl:Class ;
+                   rdfs:subClassOf :RiberaDelDuero ;
+                   rdfs:comment "Vino del tipo Ribera del Duero tinto." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDueroWhite
+:RiberaDelDueroWhite rdf:type owl:Class ;
+                     rdfs:subClassOf :RiberaDelDuero ;
+                     rdfs:comment "Vino del tipo Ribera del Duero Blanco." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Rioja
+:Rioja rdf:type owl:Class ;
+       rdfs:subClassOf :Wine ;
+       rdfs:comment "Vino del tipo Rioja." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiojaRed
+:RiojaRed rdf:type owl:Class ;
+          rdfs:subClassOf :Rioja ;
+          rdfs:comment "Vino del tipo Rioja Tinto." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiojaWhite
+:RiojaWhite rdf:type owl:Class ;
+            rdfs:subClassOf :Rioja ;
+            rdfs:comment "Vino del tipo Rioja Blanco." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Sherry
+:Sherry rdf:type owl:Class ;
+        rdfs:subClassOf :Wine ;
+        rdfs:comment "Vino del tipo Sherry." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Syrah
+:Syrah rdf:type owl:Class ;
+       rdfs:subClassOf :Wine ;
+       rdfs:comment "Vino del tipo Syrah" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Tempranillo
+:Tempranillo rdf:type owl:Class ;
+             rdfs:subClassOf :Wine ;
+             rdfs:comment "Vino del tipo Tempranillo." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#ToroRed
+:ToroRed rdf:type owl:Class ;
+         rdfs:subClassOf :Wine ;
+         rdfs:comment "Vino del tipo Toro tinto." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Verdejo
+:Verdejo rdf:type owl:Class ;
+         rdfs:subClassOf :Wine ;
+         rdfs:comment "Vino del tipo Verdejo." .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine
+:Wine rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPrice ;
+                            owl:someValuesFrom xsd:decimal
+                          ] ;
+      rdfs:comment "Bebida alcoholica elaborada a mediante la fermentación de la uva." ;
+      rdfs:sameAs "https://dbpedia.org/ontology/Wine" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Winery
+:Winery rdf:type owl:Class ;
+        rdfs:comment "Bodega donde se producen vinos." ;
+        rdfs:sameAs "https://dbpedia.org/page/Winery" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#AltoMoncayo
+:AltoMoncayo rdf:type owl:NamedIndividual ,
+                      :Winery ;
+             :hasName "Alto Moncayo" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#AlvaroPalacios
+:AlvaroPalacios rdf:type owl:NamedIndividual ,
+                         :Winery ;
+                :hasName "Alvaro Palacios" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#AquilonGarnacha
+:AquilonGarnacha rdf:type owl:NamedIndividual ,
+                          :Grenache ;
+                 :producedBy :AltoMoncayo ;
+                 :producedIn :CampoDeBorja ;
+                 :hasPrice 108.9 ;
+                 :hasRate 4.7 .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#CampoDeBorja
+:CampoDeBorja rdf:type owl:NamedIndividual ,
+                       :Region ;
+              :hasName "Campo de Borja" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#CastillaYLeon
+:CastillaYLeon rdf:type owl:NamedIndividual ,
+                        :Region ;
+               :hasName "Castilla y León" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#ErmitaVellesVinyesPriorat
+:ErmitaVellesVinyesPriorat rdf:type owl:NamedIndividual ,
+                                    :Priorat ;
+                           :producedBy :AlvaroPalacios ;
+                           :producedIn :Priorato ;
+                           :hasPrice 1410.26 ;
+                           :hasRate 4.8 .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Priorato
+:Priorato rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :hasName "Priorato" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDuero
+:RiberaDelDuero rdf:type owl:NamedIndividual ,
+                         :Region ;
+                :hasName "Ribera Del Duero" .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Unico
+:Unico rdf:type owl:NamedIndividual ,
+                :RiberaDelDueroRed ;
+       :producedBy :VegaSicilia ;
+       :producedIn :RiberaDelDuero ;
+       :hasPrice 324.95 ;
+       :hasRate 4.8 .
+
+
+###  http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#VegaSicilia
+:VegaSicilia rdf:type owl:NamedIndividual ,
+                      :Winery ;
+             :hasName "Vega Sicilia" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:RiberaDelDuero rdfs:comment "Vino del tipo Ribera del Duero." .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/fran/ontologies/2023/3//w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/fran/ontologies/2023/3//rate> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/fran/ontologies/2023/3//price> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/fran/ontologies/2023/3//wine> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Una clase Wine producedBy una instnacia Winery VegaSicilia debe tener un precio (hasPrice) mayor que 120" ;
+   rdfs:label "ReglaPrecio1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//w>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :producedBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//w> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :VegaSicilia
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPrice ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//w> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/fran/ontologies/2023/3//price>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <http://www.semanticweb.org/fran/ontologies/2023/3//price> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 120.0 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Una clase wine producedBy AlvaroPalacios con una nota mayor a 4.5 debe tener un precio mayor a 1000." ;
+   rdfs:label "ReglaPrecio2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//wine>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :producedBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//wine> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :AlvaroPalacios
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRate ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//wine> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/fran/ontologies/2023/3//rate>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/fran/ontologies/2023/3//rate> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 4.5 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPrice ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//wine> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/fran/ontologies/2023/3//price>
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <http://www.semanticweb.org/fran/ontologies/2023/3//price> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 1000 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Un vino producedIn RiberaDelDuero tendrá una nota mayor a 4.3" ;
+   rdfs:label "ReglaNota1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//w>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :producedIn ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//w> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :RiberaDelDuero
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRate ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/fran/ontologies/2023/3//w> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/fran/ontologies/2023/3//rate>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <http://www.semanticweb.org/fran/ontologies/2023/3//rate> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 4.3 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
