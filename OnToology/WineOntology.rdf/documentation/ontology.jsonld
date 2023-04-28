@@ -1,0 +1,673 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//rate"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+      "@value" : "4.3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Una clase Wine producedBy una instnacia Winery VegaSicilia debe tener un precio (hasPrice) mayor que 120"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ReglaPrecio1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid20"
+    }, {
+      "@id" : "_:genid18"
+    }, {
+      "@id" : "_:genid16"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid22"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//price"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasPrice"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#VegaSicilia"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedBy"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasPrice"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//price"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+      "@value" : "120.0"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Una clase wine producedBy AlvaroPalacios con una nota mayor a 4.5 debe tener un precio mayor a 1000."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ReglaPrecio2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid37"
+    }, {
+      "@id" : "_:genid35"
+    }, {
+      "@id" : "_:genid33"
+    }, {
+      "@id" : "_:genid29"
+    }, {
+      "@id" : "_:genid27"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid39"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//wine"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//price"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasPrice"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//rate"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+      "@value" : "4.5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Un vino producedIn RiberaDelDuero tendrá una nota mayor a 4.3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ReglaNota1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid9"
+    }, {
+      "@id" : "_:genid7"
+    }, {
+      "@id" : "_:genid5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid11"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//wine"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//rate"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasRate"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//wine"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#AlvaroPalacios"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedBy"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//wine"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//price"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1000"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//rate"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasRate"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDuero"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedIn"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//price",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//rate",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//w",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3//wine",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#authors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#authors" : [ {
+    "@value" : "Fede Soriano & Fran Ferrer"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/3/untitled-ontology-13#title" : [ {
+    "@value" : "Spanish Wine Quality"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#AltoMoncayo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName" : [ {
+    "@value" : "Alto Moncayo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Winery"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#AlvaroPalacios",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName" : [ {
+    "@value" : "Alvaro Palacios"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Winery"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#AquilonGarnacha",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasPrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "108.9"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasRate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.7"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedBy" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#AltoMoncayo"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedIn" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#CampoDeBorja"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Grenache"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#CampoDeBorja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName" : [ {
+    "@value" : "Campo de Borja"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Region"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#CastillaYLeon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName" : [ {
+    "@value" : "Castilla y León"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Region"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Cava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Cava."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#ErmitaVellesVinyesPriorat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasPrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1410.26"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasRate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.8"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedBy" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#AlvaroPalacios"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedIn" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Priorato"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Priorat"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Grenache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Grenache."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Mencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Mencia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Monastrell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Monastrell."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#PedroXimenez",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Pedro Ximenez"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Priorat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Priorat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Priorato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName" : [ {
+    "@value" : "Priorato"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Region"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Red",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo tinto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Red_wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Región de procedencia del vino o bodega en cuestión"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDuero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName" : [ {
+    "@value" : "Ribera Del Duero"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Ribera del Duero."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDueroRed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Ribera del Duero tinto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDuero"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDueroWhite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Ribera del Duero Blanco."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDuero"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Rioja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Rioja."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiojaRed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Rioja Tinto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Rioja"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiojaWhite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Rioja Blanco."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Rioja"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Sherry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Sherry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Syrah",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Syrah"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Tempranillo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Tempranillo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#ToroRed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Toro tinto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Unico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasPrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "324.95"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasRate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.8"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedBy" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#VegaSicilia"
+  } ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedIn" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDuero"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#RiberaDelDueroRed"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#VegaSicilia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName" : [ {
+    "@value" : "Vega Sicilia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Winery"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Verdejo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vino del tipo Verdejo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bebida alcoholica elaborada a mediante la fermentación de la uva."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/Wine"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Winery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bodega donde se producen vinos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Winery"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Region"
+  }, {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#hasRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Winery"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#producedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/fran/ontologies/2023/SpanishWineQuality#Region"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]

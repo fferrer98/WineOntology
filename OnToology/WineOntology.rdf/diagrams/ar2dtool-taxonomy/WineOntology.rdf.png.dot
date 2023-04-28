@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "SpanishWineQuality:RiojaWhite" "SpanishWineQuality:Monastrell" "SpanishWineQuality:RiberaDelDueroRed" "SpanishWineQuality:Sherry" "SpanishWineQuality:Verdejo" "SpanishWineQuality:Rioja" "SpanishWineQuality:RiberaDelDueroWhite" "SpanishWineQuality:PedroXimenez" "SpanishWineQuality:Priorat" "SpanishWineQuality:Syrah" "SpanishWineQuality:ToroRed" "SpanishWineQuality:Cava" "SpanishWineQuality:Red" "SpanishWineQuality:Tempranillo" "SpanishWineQuality:Wine" "SpanishWineQuality:Mencia" "SpanishWineQuality:Grenache" "SpanishWineQuality:RiojaRed" "SpanishWineQuality:RiberaDelDuero" ; /*classes style*/
+	"SpanishWineQuality:RiojaRed" -> "SpanishWineQuality:Rioja" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Mencia" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:RiberaDelDueroWhite" -> "SpanishWineQuality:RiberaDelDuero" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Syrah" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Rioja" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Tempranillo" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:RiberaDelDuero" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Priorat" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Verdejo" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:ToroRed" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:RiojaWhite" -> "SpanishWineQuality:Rioja" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:RiberaDelDueroRed" -> "SpanishWineQuality:RiberaDelDuero" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Monastrell" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Cava" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Red" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Grenache" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:Sherry" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+	"SpanishWineQuality:PedroXimenez" -> "SpanishWineQuality:Wine" [ label = "rdfs:subClassOf" ];
+
+}
